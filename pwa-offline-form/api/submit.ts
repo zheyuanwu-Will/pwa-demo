@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import formidable from 'formidable'
 import { readFile } from 'node:fs/promises'
-import { pool, ensureTable } from './_db'
+import { pool, ensureTable } from './_db.js'
 
 export const config = { api: { bodyParser: false } }
 
